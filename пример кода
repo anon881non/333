@@ -1,0 +1,15 @@
+include <LiquidCrystalRus.h>
+constexpr uint8_t PIN_RS = 6;
+constexpr uint8_t PIN_EN = 7;
+constexpr uint8_t PIN_DB4 = 8;
+constexpr uint8_t PIN_DB5 = 9;
+constexpr uint8_t PIN_DB6 = 10;
+constexpr uint8_t PIN_DB7 = 11;
+LiquidCrystalRus lcd(PIN_RS, PIN_EN, PIN_DB4, PIN_DB5, PIN_DB6, PIN_DB7);
+void setup() {
+lcd.begin(16,2);
+lcd.setCursor(1,0);
+lcd.print("М.Ю.Лермонтов");
+lcd.setCursor(2,0);
+lcd.print("Бородино");
+}
